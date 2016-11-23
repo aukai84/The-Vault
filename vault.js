@@ -1,16 +1,16 @@
 'use strict';
 module.exports = function() {
 
-  var secretVault = {};
+  var _secretVault = {};
 
   function _setValue(key,value) {
-    secretVault[key] = value;
+    _secretVault[key] = value;
 
   }
 
   function _getValue(key) {
-    if(secretVault.hasOwnProperty(key)) {
-      return secretVault[key];
+    if(_secretVault.hasOwnProperty(key)) {
+      return _secretVault[key];
     } else {
       return null;
     }
